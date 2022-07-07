@@ -21,7 +21,7 @@ const Navbar = () => {
                     <li className={styles.listItem}>Des produits</li>
                     <li className={styles.listItem}>Menu</li>
                     
-                    <li className={styles.listItem}>
+                    <li className={styles.logo}>
                         <Image src="/img/logo.svg" alt="phone" width="50" height="50" />
                         Chez l’italienne
                     </li>

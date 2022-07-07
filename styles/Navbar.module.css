@@ -9,19 +9,17 @@
     top: 0;
 }
 
-.item {
-    flex: 1;
+.item {    
     display: flex;
     align-items: center;
 }
 
-.item:nth-child(2) {
-    flex: 2;    
+@media (max-width: 1400px) {
+    .item:nth-child(2) {
+        display: none;
+    }
 }
 
-.item:last-child {
-    justify-content: flex-end;    
-}
 
 .callButton {
     padding: 10px;
@@ -60,16 +58,17 @@
     font-size: 18px;
 }
 
-.listItem:nth-child(4){
+.logo {
     display: flex;
     align-items: center;
     font-size: 40px;
     font-weight: bold;
     gap: 15px;
-    font-style: italic;
-    margin: 0 30px;
-    color: var(--second-color);
+    font-style: italic;    
+    color: var(--second-color);    
 }
+
+
 
 .cart {
     position: relative;
