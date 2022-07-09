@@ -14,11 +14,13 @@ const Product = () => {
 
     return (
         <div className={styles.container}>
+
             <div className={styles.left}>
                 <div className={styles.imgContainer}>
                     <Image src={pizza.img} objectFit="contain" layout="fill" alt="" />
                 </div>
             </div>
+
             <div className={styles.right}>
                 <h1 className={styles.title}>{pizza.name}</h1>
                 <span className={styles.price}>${pizza.price[size]}</span>
@@ -82,6 +84,7 @@ const Product = () => {
                     <button className={styles.button}>Add to Cart</button>
                 </div>
             </div>
+            
         </div>
     );
 };
