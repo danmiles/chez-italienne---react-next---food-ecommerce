@@ -26,7 +26,13 @@
   color: #777;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 680px) {
   .container {
     width: 100%;
   }

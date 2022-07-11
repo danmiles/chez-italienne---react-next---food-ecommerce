@@ -33,3 +33,17 @@ yarn-error.log*
 # vercel
 .vercel
 
+components/Add.jsx
+pages/cart.jsx
+pages/index.js
+pages/admin/index.jsx
+pages/admin/login.jsx
+pages/orders/[id].jsx
+pages/product/[id].jsx
+
+pages/product/\[id\].jsx
+pages/orders/\[id\].jsx
+pages/index.js
+components/Add.jsx
+pages/admin/index.jsx
+pages/admin/login.jsx

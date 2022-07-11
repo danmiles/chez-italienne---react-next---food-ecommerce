@@ -31,7 +31,7 @@ const Add = ({ setClose }) => {
     data.append("upload_preset", "uploads");
     try {
       const uploadRes = await axios.post(
-        "https://api.cloudinary.com/v1_1/dsbyq4sj1/image/upload",
+        "https://api.cloudinary.com/v1_1/dlgtw34xy/image/upload",
         data
       );
 
@@ -58,9 +58,9 @@ const Add = ({ setClose }) => {
         <span onClick={() => setClose(true)} className={styles.close}>
           X
         </span>
-        <h1>Add a new Pizza</h1>
+        <h1>Ajouter une nouvelle pizza</h1>
         <div className={styles.item}>
-          <label className={styles.label}>Choose an image</label>
+          <label className={styles.label}>Choisissez une image</label>
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
         </div>
         <div className={styles.item}>
