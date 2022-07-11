@@ -31,7 +31,7 @@ const Add = ({ setClose }) => {
     data.append("upload_preset", "uploads");
     try {
       const uploadRes = await axios.post(
-        "https://api.cloudinary.com/v1_1/dlgtw34xy/image/upload",
+        "https://api.cloudinary.com/v1_1/dsbyq4sj1/image/upload",
         data
       );
 
@@ -82,19 +82,19 @@ const Add = ({ setClose }) => {
           <label className={styles.label}>Prices</label>
           <div className={styles.priceContainer}>
             <input
-              className={`€{styles.input} €{styles.inputSm}`}
+              className={`${styles.input} ${styles.inputSm}`}
               type="number"
               placeholder="Small"
               onChange={(e) => changePrice(e, 0)}
             />
             <input
-              className={`€{styles.input} €{styles.inputSm}`}
+              className={`${styles.input} ${styles.inputSm}`}
               type="number"
               placeholder="Medium"
               onChange={(e) => changePrice(e, 1)}
             />
             <input
-              className={`€{styles.input} €{styles.inputSm}`}
+              className={`${styles.input} ${styles.inputSm}`}
               type="number"
               placeholder="Large"
               onChange={(e) => changePrice(e, 2)}
@@ -105,14 +105,14 @@ const Add = ({ setClose }) => {
           <label className={styles.label}>Extra</label>
           <div className={styles.extra}>
             <input
-              className={`€{styles.input} €{styles.inputSm}`}
+              className={`${styles.input} ${styles.inputSm}`}
               type="text"
               placeholder="Item"
               name="text"
               onChange={handleExtraInput}
             />
             <input
-              className={`€{styles.input} €{styles.inputSm}`}
+              className={`${styles.input} ${styles.inputSm}`}
               type="number"
               placeholder="Price"
               name="price"
