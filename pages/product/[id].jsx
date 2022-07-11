@@ -97,7 +97,9 @@ const Product = ({ pizza }) => {
 
 export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(
-    `http://localhost:3000/api/products/${params.id}`
+    // Localhost
+    // `http://localhost:3000/api/products/${params.id}`
+    `https://chez-italienne-react-next.vercel.app/api/products/${params.id}`
   );
   return {
     props: {

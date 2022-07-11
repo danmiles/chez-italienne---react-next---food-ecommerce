@@ -128,9 +128,11 @@ export const getServerSideProps = async (ctx) => {
       },
     };
   }
-
-  const productRes = await axios.get("http://localhost:3000/api/products");
-  const orderRes = await axios.get("http://localhost:3000/api/orders");
+// Localhost
+  // const productRes = await axios.get("http://localhost:3000/api/products");
+  // const orderRes = await axios.get("http://localhost:3000/api/orders");
+  const productRes = await axios.get("https://chez-italienne-react-next.vercel.app/api/products");
+  const orderRes = await axios.get("https://chez-italienne-react-next.vercel.app/api/orders");
 
   return {
     props: {
