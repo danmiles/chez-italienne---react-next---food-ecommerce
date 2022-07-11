@@ -22,7 +22,7 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className={styles.card}>
-                    <h2 className={styles.title}>Horaires d'ouvertures</h2>
+                    <h2 className={styles.title}>Horaires d.ouvertures</h2>
                     <p className={styles.text}>
                         DU LUNDI AU VENDREDI
                         <br /> 9:00 – 22:00
