@@ -46,6 +46,7 @@ const Add = ({ setClose }) => {
       // Localhost
       // await axios.post("http://localhost:3000/api/products", newProduct);
       await axios.post("https://chez-italienne-react-next.vercel.app/api/products", newProduct);
+      
       setClose(true);
     } catch (err) {
       console.log(err);
