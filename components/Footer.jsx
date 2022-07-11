@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className={styles.card}>
                     <h2 className={styles.title}>Trouvez notre magasin</h2>
                     <p className={styles.text}>
-                        Casino Géant,
+                        Casino Geant,
                         <br /> Villeneuve-Loubet, 06270
                         <br /> (602) 867-1010
                     </p>

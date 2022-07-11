@@ -21,12 +21,12 @@ const Navbar = () => {
       <div className={styles.item}>
         <ul className={styles.list}>
           <Link href="/" passHref>
-            <li className={styles.listItem}>Page d'accueil</li>
+            <li className={styles.listItem}>Page daccueil</li>
           </Link>
 
           <li className={styles.logo}>
             <Image src="/img/logo.svg" alt="phone" width="50" height="50" />
-            Chez l’italienne
+            Chez litalienne
           </li>
 
           <Link href="https://portfolio-denis.com/projects/simplon/chez-italienne/" target="_blank" passHref>
