@@ -35,7 +35,7 @@ const Product = ({ pizza }) => {
   };
 
   const handleClick = () => {
-    dispatch(addProduct({...pizza, extras, price, quantity}));
+    dispatch(addProduct({ ...pizza, extras, price, quantity }));
   };
 
   return (
@@ -49,22 +49,22 @@ const Product = ({ pizza }) => {
         <h1 className={styles.title}>{pizza.title}</h1>
         <span className={styles.price}>${price}</span>
         <p className={styles.desc}>{pizza.desc}</p>
-        <h3 className={styles.choose}>Choose the size</h3>
+        <h3 className={styles.choose}>Choisissez la taille</h3>
         <div className={styles.sizes}>
           <div className={styles.size} onClick={() => handleSize(0)}>
             <Image src="/img/size.png" layout="fill" alt="" />
-            <span className={styles.number}>Small</span>
+            <span className={styles.number}>Petite</span>
           </div>
           <div className={styles.size} onClick={() => handleSize(1)}>
             <Image src="/img/size.png" layout="fill" alt="" />
-            <span className={styles.number}>Medium</span>
+            <span className={styles.number}>Moyen</span>
           </div>
           <div className={styles.size} onClick={() => handleSize(2)}>
             <Image src="/img/size.png" layout="fill" alt="" />
-            <span className={styles.number}>Large</span>
+            <span className={styles.number}>Grande</span>
           </div>
         </div>
-        <h3 className={styles.choose}>Choose additional ingredients</h3>
+        <h3 className={styles.choose}>Choisissez des ingrédients supplémentaires</h3>
         <div className={styles.ingredients}>
           {pizza.extraOptions.map((option) => (
             <div className={styles.option} key={option._id}>
@@ -87,7 +87,7 @@ const Product = ({ pizza }) => {
             className={styles.quantity}
           />
           <button className={styles.button} onClick={handleClick}>
-            Add to Cart
+            Ajouter au panier
           </button>
         </div>
       </div>

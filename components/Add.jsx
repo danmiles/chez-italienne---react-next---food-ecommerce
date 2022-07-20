@@ -46,7 +46,7 @@ const Add = ({ setClose }) => {
       // Localhost
       // await axios.post("http://localhost:3000/api/products", newProduct);
       await axios.post("https://chez-italienne-react-next.vercel.app/api/products", newProduct);
-      
+
       setClose(true);
     } catch (err) {
       console.log(err);
@@ -59,7 +59,7 @@ const Add = ({ setClose }) => {
         <span onClick={() => setClose(true)} className={styles.close}>
           X
         </span>
-        <h1>Ajouter une nouvelle pizza</h1>
+        <h1>Ajouter une nouvelle produit</h1>
         <div className={styles.item}>
           <label className={styles.label}>Choisissez une image</label>
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
@@ -86,19 +86,19 @@ const Add = ({ setClose }) => {
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="Small"
+              placeholder="Petite"
               onChange={(e) => changePrice(e, 0)}
             />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="Medium"
+              placeholder="Moyen"
               onChange={(e) => changePrice(e, 1)}
             />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="Large"
+              placeholder="Grande"
               onChange={(e) => changePrice(e, 2)}
             />
           </div>

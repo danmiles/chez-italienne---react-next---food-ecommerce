@@ -4,11 +4,12 @@ import PizzaCard from "./PizzaCard";
 const PizzaList = ({ pizzaList }) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>THE BEST PIZZA IN TOWN</h1>
+      <h1 className={styles.title}>Uniquement des produits italiens d'excellence</h1>
       <p className={styles.desc}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu
-        in pretium molestie. Interdum et malesuada fames acme. Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit.
+        Nous vendons de la nourriture de la ferme italienne. Nous permettons à nos clients de découvrir la culture italienne et les valeurs familiales à travers nos produits.
+      </p>
+      <p className={styles.desc}>
+        Produits de la ferme italienne cultivés avec amour et soin.
       </p>
       <div className={styles.wrapper}>
         {pizzaList.map((pizza) => (
