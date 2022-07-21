@@ -47,3 +47,5 @@ yarn-error.log*
 # components/Add.jsx
 # pages/admin/index.jsx
 # pages/admin/login.jsx
+
+.env
