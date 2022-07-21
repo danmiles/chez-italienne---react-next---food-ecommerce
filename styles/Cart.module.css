@@ -57,6 +57,30 @@
     margin-top: 20px;
 }
 
+.payButton {
+    position: relative;
+    background-color: var(--main-color);
+    width: 100%;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 15px;
+    border-radius: 5px;    
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.payButton:hover {
+    background-color: var(--second-color);
+}
+
+
+
 @media screen and (max-width: 1000px) {
     .container {
         flex-direction: column;
