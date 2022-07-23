@@ -11,8 +11,13 @@ export default function Home({ pizzaList, admin }) {
     return (
         <div className={styles.container}>
             <Head>
-                <title>Pizza Restaurant in Newyork</title>
-                <meta name="description" content="Chez l’italienne - Il s'agit d'un stand spécialisé dans les produits alimentaires italiens de qualité exceptionnelle. Nous sommes situés à Villeneuve Loubet." />
+                <title>
+                    Chez l’italienne - Alimentation italiens de haute qualité.
+                </title>
+                <meta
+                    name="description"
+                    content="Chez l’italienne - Il s'agit d'un stand spécialisé dans les produits alimentaires italiens de qualité exceptionnelle. Nous sommes situés à Villeneuve Loubet."
+                />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Featured />
@@ -30,7 +35,9 @@ export const getServerSideProps = async (ctx) => {
         admin = true;
     }
     // Deploy
-    const res = await axios.get("https://chez-italienne-react-next.vercel.app/api/products");
+    const res = await axios.get(
+        "https://chez-italienne-react-next.vercel.app/api/products"
+    );
     // Localhost
     // const res = await axios.get("http://localhost:3000/api/products");
     return {
