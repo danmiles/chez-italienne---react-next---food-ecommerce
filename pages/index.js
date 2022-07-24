@@ -35,7 +35,6 @@ export const getServerSideProps = async () => {
     return {
         props: {
             pizzaList: res.data,
-            admin,
         },
     };
 };
