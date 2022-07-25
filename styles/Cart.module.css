@@ -15,11 +15,27 @@
     width: 100px;
     height: 100px;
     position: relative;
+    margin: 0 auto;
 }
 
 .table {
     width: 100%;
     border-spacing: 20px;
+}
+
+.titleData {
+
+}
+
+.name,
+.extras,
+.price,
+.quantity,
+.total {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .name {
