@@ -50,3 +50,4 @@ yarn-error.log*
 # pages/admin/index.jsx
 # pages/admin/login.jsx
 
+.env
